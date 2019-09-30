@@ -1,0 +1,420 @@
+/* 
+    PEDRO HENRIQUE V CORDISTA
+    CREATIVECODE | DEVSPACE
+    //
+    
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700&display=swap');
+* {
+    max-width: 100vw !important;
+    box-sizing: border-box
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw !important;
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 1rem
+}
+
+:root {
+    --colorDarkBlue: #2f4b7e;
+    --colorYellow: #dc9949;
+    --grey: #6d7278;
+    --blue: #2f5bea;
+    --black: #2c2e30
+}
+
+input, textarea {
+    background-color: white !important;
+    border: 0px !important;
+    border-radius: 5px !important
+}
+
+input::placeholder, textarea::placeholder {
+    padding-left: 10px;
+}
+
+/********************* HELPERS *********************/
+
+.sectionStartTwo {
+    margin-top: 5rem
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.colorYellow {
+    color: var(--colorYellow)
+}
+
+.colorGrey {
+    color: var(--grey) !important;
+}
+
+.colorBlue {
+    color: var(--blue) !important;
+}
+
+.colorBlack {
+    color: var(--black) !important;
+}
+
+.colorDarkBlue {
+    color: var(--colorDarkBlue)
+}
+
+.bgDarkBlue {
+    background-color: var(--colorDarkBlue);
+}
+
+.bgYellow {
+    background-color: var(--colorYellow);
+}
+
+/********************* HEADER *********************/
+
+header {
+    padding: 20px 0
+}
+
+header img {
+    height: 15px;
+}
+
+/********************* MENU *********************/
+
+nav {
+    position: absolute;
+    background-color: transparent !important;
+    margin-top: 1.5rem;
+    z-index: 9999;
+}
+
+nav .brand-logo img {
+    width: 150px
+}
+
+nav .menu-button {
+    border-radius: 5px;
+    box-shadow: 10px 20px 34px 0 rgba(0, 0, 0, 0.13);
+}
+
+.menumobile {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+}
+
+.menumobile_logo>img {
+    width: 30%;
+}
+
+.menumobile_toogle {
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer
+}
+
+.menumobile_toogle>i {
+    font-size: 2.5rem
+}
+
+.pushmenu {
+    /*this is the nav*/
+    background: var(--colorYellow);
+    font-family: Montserrat;
+    width: 240px;
+    color: white;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    padding: 1rem 0
+}
+
+.pushmenu a {
+    display: block;
+    /* drops the nav vertically*/
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid lightgray;
+    padding: 14px;
+}
+
+.pushmenu a:hover {
+    background: #00A287;
+    color: white
+}
+
+.pushmenu a:active {
+    background: #454f5c;
+    color: #fff;
+}
+
+.pushmenu-left {
+    left: -240px;
+}
+
+.pushmenu-left.pushmenu-open {
+    left: 0;
+}
+
+.pushmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+
+.pushmenu-push-toright {
+    left: 240px;
+}
+
+/*Transition*/
+
+.pushmenu, .pushmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/********************* MENU *********************/
+
+.banner .banner-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.banner-content {
+    width: 50% !important;
+}
+
+.banner-titulo {
+    font-size: 3rem !important;
+    line-height: 3.5rem
+}
+
+.banner-texto {
+    font-size: 1.3rem
+}
+
+.banner-button, .banner-button-two {
+    height: 46px;
+}
+
+.banner-button {
+    padding-bottom: 3px;
+    border-radius: 5px;
+}
+
+.banner-button-two {
+    margin-left: 15px;
+}
+
+.banner-content img {
+    height: 25px;
+}
+
+/********************* ABOUT *********************/
+
+.about-title {
+    font-size: 2rem
+}
+
+.about-subtitle {
+    font-size: 1.4rem
+}
+
+.divider {
+    background-color: #d7d9db;
+    width: 100%;
+    height: 2px
+}
+
+.about-item {
+    padding: 1.5rem !important
+}
+
+.about-item-title {
+    font-size: 2rem;
+    line-height: 2.5rem
+}
+
+/********************* BENEFICIOS *********************/
+
+.beneficios-item {
+    padding: 2rem 1rem
+}
+
+.beneficios-image>img {
+    width: 70px;
+    background-color: #f0f3ff;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.beneficio-subtitle, .beneficio-title {
+    font-size: 1.3rem
+}
+
+.partners-row img {
+    height: 25px;
+}
+
+.partners-row>div {
+    margin: 0px 3%
+}
+
+/********************* SERVIÇOS *********************/
+
+.servicos {
+    padding: 5rem 0
+}
+
+.swiper-servicos-prev:after {
+    content: '' !important;
+}
+
+.swiper-servicos-next:after {
+    content: '' !important;
+}
+
+.swiper-servicos-next {
+    right: 0% !important;
+    top: 5% !important;
+    background-color: white !important;
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50% !important;
+    padding-left: 3px !important;
+}
+
+.swiper-servicos-prev {
+    right: 15% !important;
+    left: inherit !important;
+    top: 5% !important;
+    background-color: #5378ab !important;
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50% !important;
+    padding-right: 1px !important;
+}
+
+.servicos-title {
+    font-size: 1.5rem !important
+}
+
+/********************* DEPOIMENTOS *********************/
+
+.swiper-depoimentos {
+    height: 300px
+}
+
+.depoimento-item {
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    padding: 1rem
+}
+
+.depoimento-author>div {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/********************* PARALLAX *********************/
+
+.parallax-button {
+    width: fit-content;
+    padding: 5px 35px
+}
+
+/********************* ORÇAMENTO *********************/
+
+.orcamento {
+    padding: 5rem 0;
+}
+
+.file-field input {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important
+}
+
+footer {
+    padding: 1.5rem 0
+}
+
+/********************* FOOTER *********************/
+
+footer img {
+    width: 30px;
+    margin: 0 7px
+}
+
+@media (max-width: 480px) {
+    .containerEighteen {
+        width: 90% !important;
+        margin-left: 5% !important
+    }
+    .menumobilerelative {
+        margin-top: -5px;
+        border-top: 1px solid var(--colorDarkBlue)
+    }
+    header {
+        padding: 10px 0;
+    }
+    header>div>.row {
+        display: block !important;
+    }
+    header>div>.row>div {
+        margin: 3px 0;
+        font-size: 1.1rem
+    }
+    .banner-content {
+        width: 80% !important;
+    }
+    .banner-titulo {
+        font-size: 2.5rem !important;
+        line-height: 2.5rem;
+    }
+    .banner-texto {
+        font-size: 1rem;
+    }
+    .banner-button-two {
+        justify-content: center;
+        margin-top: 1rem
+    }
+    .partners-row img {
+        height: 15px;
+    }
+    .orcamentofix {
+        padding-left: 0px !important
+    }
+}
+
+@media (max-width: 760px) {
+    .banner-content {
+        width: 80% !important;
+    }
+
+}
